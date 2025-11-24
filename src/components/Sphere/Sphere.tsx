@@ -29,7 +29,7 @@ export default function Sphere({
     const worldX = map(x, 0, 100, -width / 2, width / 2);
     const worldY = map(y, 0, 100, -height / 2, height / 2);
 
-    return [worldX, -worldY, z];
+    return [worldX, -worldY, z] as [x: number, y: number, z: number];
   }, [x, y, z, viewport]);
 
   return (
